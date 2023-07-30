@@ -1,0 +1,7 @@
+In Flask, the line of code app = Flask(__name__) creates a Flask application object named "app". This object is an instance of the Flask class, which is provided by the Flask module.
+
+The __name__ argument is a special variable in Python that represents the name of the current module. When the Flask constructor is called with __name__ as an argument, it helps Flask to determine the root path of the application. This is important because Flask uses this root path to locate resources such as templates and static files.
+
+By passing __name__ as an argument to the Flask constructor, you are telling Flask that the current module should be used as the starting point (or root) for the application. This is a common convention in Flask applications.
+
+So, in summary, the line of code app = Flask(__name__) creates a Flask application object named "app" and sets the root path of the application based on the current module.
